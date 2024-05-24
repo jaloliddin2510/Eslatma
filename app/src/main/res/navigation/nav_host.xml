@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.eslatma.Fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_pinFragment"
+            app:destination="@id/pinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.eslatma.Fragments.AddFragment"
+        android:label="AddFragment"
+        tools:layout="@layout/add_fragment"/>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.eslatma.Fragments.EditFragment"
+        android:label="EditFragment"
+        tools:layout="@layout/edit_fragment"/>
+    <fragment
+        android:id="@+id/pinFragment"
+        android:name="com.example.eslatma.Fragments.PinFragment"
+        android:label="PinFragment"
+        tools:layout="@layout/pin_fragment"/>
+</navigation>
